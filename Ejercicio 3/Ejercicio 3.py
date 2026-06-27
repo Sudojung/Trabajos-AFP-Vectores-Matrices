@@ -11,28 +11,17 @@ w = []
 # Variable acumuladora para el producto escalar
 producto = 0
 
-# Solicitamos los elementos del primer vector
-print("\nIngrese los elementos del vector V:")
-
+# Solicitamos los elementos de ambos vectores
 for i in range(n):
 
-    elemento = int(input(f"V[{i + 1}]: "))
+    elemento_v = int(input(f"Ingrese el elemento {i + 1} del vector V: "))
+    v.append(elemento_v)
 
-    # Agregamos el elemento al vector V
-    v.append(elemento)
+    elemento_w = int(input(f"Ingrese el elemento {i + 1} del vector W: "))
+    w.append(elemento_w)
 
-# Solicitamos los elementos del segundo vector
-print("\nIngrese los elementos del vector W:")
-
-for i in range(n):
-
-    elemento = int(input(f"W[{i + 1}]: "))
-
-    # Agregamos el elemento al vector W
-    w.append(elemento)
-
-    # Acumulamos el producto escalar
-    producto = producto + (v[i] * w[i])
+    # Acumulamos el producto de las componentes correspondientes
+    producto = producto + (elemento_v * elemento_w)
 
 # Mostramos el resultado
 print(f"\nEl producto escalar de los vectores es: {producto}")
