@@ -17,25 +17,16 @@ int main() {
     // Variable acumuladora para el producto escalar
     int producto = 0;
 
-    // Solicitamos los elementos del primer vector
-    cout << "\nIngrese los elementos del vector V:\n";
-
+    // Solicitamos los elementos de ambos vectores
     for (int i = 0; i < n; i++) {
 
-        cout << "V[" << i + 1 << "]: ";
+        cout << "Ingrese el elemento " << i + 1 << " del vector V: ";
         cin >> v[i];
 
-    }
-
-    // Solicitamos los elementos del segundo vector
-    cout << "\nIngrese los elementos del vector W:\n";
-
-    for (int i = 0; i < n; i++) {
-
-        cout << "W[" << i + 1 << "]: ";
+        cout << "Ingrese el elemento " << i + 1 << " del vector W: ";
         cin >> w[i];
 
-        // Acumulamos el producto escalar
+        // Acumulamos el producto de las componentes correspondientes
         producto += v[i] * w[i];
 
     }
